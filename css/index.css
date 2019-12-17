@@ -31,6 +31,19 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
+
+a:link {
+    text-decoration: none;
+  }
+  
+  a:visited {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline darkorchid;
+  }  
+
 ol, ul {
 	list-style: none;
 }
@@ -52,6 +65,8 @@ table {
 }
 
 html, body {
+    width: 800px;
+    margin: 0 auto;
     height: 100%;
     font-family: 'Roboto', sans-serif;
 }
@@ -60,6 +75,36 @@ h1, h2, h3, h4, h5 {
     font-size: 18px;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
+}
+
+header{
+    display: flex;
+    align-content: center;
+    padding-top: 20px;
+    padding-bottom:20px;
+}
+
+nav{
+    align-items: flex-end; 
+	display: flex;
+	justify-content: space-around; 
+}
+
+a.nav{
+    color:black;
+    width: 120px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+img.navlogo{
+    display: flex;
+    justify-content: flex-start;
+}
+
+div.header-img{
+    padding-top: 20px;
+    padding-bottom:20px;
 }
 
 p {
@@ -83,6 +128,13 @@ p {
     width: 48%;
     padding: 0 1%;
     padding-bottom: 20px;  
+}
+
+.text-container2{
+    width: 48%;
+    padding: 0 1%;
+    padding-bottom: 20px; 
+    border-bottom: 1px dashed black;
 }
 
 .middle-content {
@@ -140,7 +192,109 @@ footer nav {
     font-size: 14px;
 }
 
+
 footer nav a {
     color: white;
     text-decoration: none;
+}
+footer nav a:hover{
+    color:darkorchid;
+}
+
+#box1{
+    background-color: teal;
+}
+#box2{
+    background-color: gold;
+}
+#box3{
+    background-color: cadetblue;
+}
+#box4{
+    background-color: coral;
+}
+#box5{
+    background-color: crimson;
+}
+#box6{
+    background-color: forestgreen;
+}
+#box7{
+    background-color: darkorchid;
+}
+#box8{
+    background-color: hotpink;
+}
+#box9{
+    background-color: indigo;
+}
+#box10{
+    background-color: dodgerblue;
+}
+
+#box1:hover{background-color: gold;}
+#box2:hover{background-color: teal;}
+#box3:hover{background-color: gold;}
+#box4:hover{background-color: crimson;}
+#box5:hover{background-color: coral;}
+#box6:hover{background-color: darkorchid;}
+#box7:hover{background-color: hotpink;}
+#box8:hover{background-color: indigo;}
+#box9:hover{background-color: cadetblue;}
+#box10:hover{background-color: indigo;}
+
+
+/*specific to about.html below*/
+
+a.learn{
+    display: inline-block;
+    border: 2px solid black;
+    color: black;
+    text-align: center;
+    border-radius: 5px;
+    width:120px;
+    padding: 5px;
+    margin: 2px;
+}
+
+a.learn:hover{
+    background-color: darkorchid;
+}
+
+img.content{
+    padding-bottom: 10px;
+}
+
+p.content{
+    padding-bottom: 20px;
+}
+
+section.blurb{
+    margin-bottom: 20px; 
+    border-bottom: 1px dashed black;
+}
+h3.blurb{
+    padding-left:20px
+}
+p.blurb {
+    padding:20px;
+}
+
+div.together{
+    padding: 20px;
+}
+
+
+div.blurb{
+    padding-bottom:20px;   
+    padding-left:20px;
+    padding-right:20px;
+    border-bottom: dashed 1px black;
+}
+
+div.flexwrapper{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
